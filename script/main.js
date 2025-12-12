@@ -1,4 +1,6 @@
-// trigger to play music in the background with sweetalert
+// Mag trigger to play music sa background with sweetalert :>
+
+// MAGIC HAPPENS HERE NIGGGER
 window.addEventListener('load', () => {
     Swal.fire({
         title: 'Do you want to play music in the background?',
@@ -19,9 +21,9 @@ window.addEventListener('load', () => {
 });
 
 
-// animation timeline
+// Nigger animations handler
 const animationTimeline = () => {
-    // split chars that needs to be animated individually
+    // Split chars kase bisaya yung gumawa ng javascript
     const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
     const hbd = document.getElementsByClassName("wish-hbd")[0];
 
@@ -47,7 +49,7 @@ const animationTimeline = () => {
         skewX: "-15deg"
     }
 
-    // timeline
+    // Timeline to ah
     const tl = new TimelineMax();
 
     tl.to(".container", 0.6, {
@@ -264,7 +266,7 @@ const animationTimeline = () => {
         "+=1"
     );
 
-    // Restart Animation on click
+    // I restart lahat kung di kapa satisfied nigger
     const replyBtn = document.getElementById("replay");
     replyBtn.addEventListener("click", () => {
         tl.restart();
