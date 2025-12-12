@@ -103,9 +103,9 @@ body {
 
 .six img {
   display: inline-block;
-  height: 340px;
-  max-width: 90%;
-  border-radius: 20px;
+  height: 350px;
+  max-width: 100%;
+  border-radius: 10px;
   /* height: auto; */
 }
 
