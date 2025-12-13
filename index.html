@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="Happy Birthday Website 2.0 | Aoudumber Bade">
-    <meta name="github" content="https://github.com/Aoudumber-Bade">
-    <title>Mehwish Birthday</title>
+    <meta name="title" content="Happy Birthday Website 2.0">
+    <title>Happy Birthday Alysa!</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -19,6 +18,9 @@
 </head>
 
 <body>
+    <!--<audio id="bgMusic" autoplay loop>
+         <source src="music/gluesong.mp3" type="audio/mpeg">
+    </audio>-->
     <div id="wrapper">
         <div class="flag__birthday">
             <img src="./images/1.png" alt="" width="350" class="flag__left">
@@ -54,7 +56,7 @@
                 <div class="btn">
                     <button id="btn__letter">
                         <div class="mail">
-                            Click Here Alysa
+                            Click Here
                             <i class="fa-regular fa-envelope"></i>
                         </div>
                     </button>
@@ -154,10 +156,12 @@
     </div>
 
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
-    let datetxt = "27 May";
+    let datetxt = "Dec 21";
     let datatxtletter = "My love. You are a very special girl. I always silently thank you for coming into my life. Today, I wish you all the best, lots of health, and lots of joy. I always hope we will celebrate many more birthdays like this together. Happy birthday to you.💕";
-    let titleLetter = "To you";
+    let titleLetter = "To: Alysa";
     let charArrDate = datetxt.split('');
     let charArrDateLetter = datatxtletter.split('');
     let charArrTitle = titleLetter.split('');
@@ -166,7 +170,21 @@
     let currentIndexTitle = 0;
     let date__of__birth = document.querySelector(".date__of__birth span");
     let text__letter = document.querySelector(".text__letter p");
-    setTimeout(function () {
+
+    //const audio = document.getElementById("bgMusic");
+    /*
+    Swal.fire({
+            title: "Ready?",
+            text: "Sound will start",
+            allowOutsideClick: false
+        }).then(() => {
+            audio.play();
+            document.body.classList.remove("paused");
+            startAnimations();
+        });
+    */
+
+        setTimeout(function () {
         timeDatetxt = setInterval(function () {
             if (currentIndex < charArrDate.length) {
                 date__of__birth.textContent += charArrDate[currentIndex];
